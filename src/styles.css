@@ -1,0 +1,118 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav styles */
+nav {
+  background-color: #6c63ff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.streamlist-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffffcc;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+form input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #6c63ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #ffd700;
+  background-color: #fffce1;
+}
+
+form button {
+  padding: 0.75rem 1.25rem;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #574fd6;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #f0f0f0;
+}
+
+.task-item .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.icons svg {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: #6c63ff;
+  transition: transform 0.2s ease;
+}
+
+.icons svg:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}

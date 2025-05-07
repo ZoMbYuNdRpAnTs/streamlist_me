@@ -5,8 +5,6 @@ import Movies from './components/Movies';
 import Cart from './components/Cart';
 import About from './components/About';
 
-
-
 function App() {
   return (
     <Router>
