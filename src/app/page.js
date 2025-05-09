@@ -20,7 +20,7 @@ export default function StreamListPage() {
             <form className="streamlist" onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    placeholder="Add a show or movie..."
+                    placeholder="Add a movie..."
                     value={item}
                     onChange={(e) => setItem(e.target.value)}
                 />
