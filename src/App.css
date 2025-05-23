@@ -5,6 +5,10 @@ body {
   background-color: #f4f6f8;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 /* App container */
 .App {
   text-align: center;
@@ -15,6 +19,7 @@ body {
   margin-top: 1rem;
   font-size: 2rem;
   color: #333;
+  margin-left: 1rem; /* Brings it off the edge of the page*/
 }
 
 /* Dropdown styling */
@@ -25,6 +30,7 @@ body {
   border: 1px solid #ccc;
   margin-bottom: 1.5rem;
   background-color: #fff;
+  margin-left: 1rem; /* Brings it off the edge of the page*/
 }
 
 /* Movie grid */
@@ -143,4 +149,68 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   color: #000;
+}
+
+.subscriptions-page {
+  padding: 2rem;
+}
+
+.subscriptions-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.subscriptions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.subscription-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.subscription-card:hover {
+  transform: translateY(-5px);
+}
+
+.subscription-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.subscription-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.subscription-card button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.subscription-card button:hover {
+  background-color: #574fd6;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
