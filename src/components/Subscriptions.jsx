@@ -1,6 +1,5 @@
 import React from 'react';
 import products from '../Data';
-//import './Subscriptions.css'; // Optional for component-specific styles
 
 function Subscriptions({ addToCart }) {
     return (
